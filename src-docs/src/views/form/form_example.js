@@ -60,6 +60,10 @@ import Loading from './form_controls_loading';
 const loadingSource = require('!!raw-loader!./form_controls_loading');
 const loadingHtml = renderToHtml(Loading);
 
+import FormReadonly from './form_readonly';
+const formReadonlySource = require('!!raw-loader!./form_readonly');
+const formReadonlyHtml = renderToHtml(FormReadonly);
+
 export const FormExample = {
   title: 'Form',
   sections: [{
@@ -252,6 +256,23 @@ export const FormExample = {
       </p>
     ),
     demo: <InlineFormPopover />,
+  }, {
+    title: 'Readonly attributes will only render the value',
+    source: [{
+      type: GuideSectionTypes.JS,
+      code: formReadonlySource,
+    }, {
+      type: GuideSectionTypes.HTML,
+      code: formReadonlyHtml,
+    }],
+    text: (
+      <p>
+        Adding the `readOnly` attribute will allow a field to align with other peer fields,
+        but will not look or behave editable. To allow them to be editable use the
+        <EuiCode>&lt;EuiInlineEditableForm /&gt;</EuiCode>.
+      </p>
+    ),
+    demo: <FormReadonly />,
   }],
 };
 
