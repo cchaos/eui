@@ -1,0 +1,43 @@
+.euiInlineEditableForm {
+
+}
+
+.euiInlineEditableForm__inputs {
+  position: relative;
+
+  // @at-root {
+  //   .euiInlineEditableForm--isEditing & {
+  //     width: calc(100% - 6rem);
+  //   }
+  // }
+
+  .euiFormControlLayout {
+    position: relative;
+    left: 0;
+    width: 0;
+    opacity: 0;
+
+    @at-root {
+      .euiInlineEditableForm--isEditing & {
+        transition: width $euiAnimSpeedNormal $euiAnimSlightResistance $euiAnimSpeedFast;
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.euiInlineEditableForm__textOnly {
+  @include euiFormControlStyle;
+
+  display: inline-block;
+  margin-top: 2px;
+  width: auto;
+
+  @at-root {
+    .euiInlineEditableForm--isEditing & {
+      width: 0;
+      opacity: 0;
+    }
+  }
+}

@@ -269,7 +269,7 @@ export const FormExample = {
       <p>
         Adding the `readOnly` attribute will allow a field to align with other peer fields,
         but will not look or behave editable. To allow them to be editable use the
-        <EuiCode>&lt;EuiInlineEditableForm /&gt;</EuiCode>.
+        <EuiCode>&lt;EuiInlineEditableForm /&gt;</EuiCode> component.
       </p>
     ),
     demo: <FormReadonly />,

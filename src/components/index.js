@@ -97,6 +97,7 @@ export {
   EuiSwitch,
   EuiTextArea,
   EuiValidatableControl,
+  EuiInlineEditableForm,
 } from './form';
 
 export {

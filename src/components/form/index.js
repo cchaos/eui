@@ -21,3 +21,4 @@ export { EuiSelect } from './select';
 export { EuiSwitch } from './switch';
 export { EuiTextArea } from './text_area';
 export { EuiValidatableControl } from './validatable_control';
+export { EuiInlineEditableForm } from './inline_editable_form';
