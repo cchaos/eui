@@ -22,8 +22,15 @@ export const EuiTableRowCell = ({
   textOnly,
   colSpan,
   header,
+  hideforMobile,
+  isMobileHeader,
   ...rest
 }) => {
+  const cellClasses = classNames('euiTableRowCell', {
+    'euiTableRowCell--hideforMobile': hideforMobile,
+    'euiTableRowCell--isMobileHeader': isMobileHeader,
+  });
+
   const contentClasses = classNames('euiTableCellContent', className, {
     'euiTableCellContent--alignRight': align === RIGHT_ALIGNMENT,
     'euiTableCellContent--alignCenter': align === CENTER_ALIGNMENT,
@@ -34,7 +41,7 @@ export const EuiTableRowCell = ({
   });
 
   return (
-    <td className="euiTableRowCell" colSpan={colSpan} data-header={header}>
+    <td className={cellClasses} colSpan={colSpan} data-header={header}>
       <div className={contentClasses} {...rest}>
         {
           textOnly === true
@@ -54,6 +61,8 @@ EuiTableRowCell.propTypes = {
   textOnly: PropTypes.bool,
   colSpan: PropTypes.number,
   header: PropTypes.string,
+  hideforMobile: PropTypes.bool,
+  isMobileHeader: PropTypes.bool,
 };
 
 EuiTableRowCell.defaultProps = {

@@ -26,8 +26,11 @@
 
 .euiTableHeaderCell {
   @include euiTableCell;
-
   color: $euiTitleColor;
+
+  &.euiTableHeaderCell--isMobileHeader {
+    display: none;
+  }
 
   .euiTableHeaderButton {
     text-align: left;
@@ -83,6 +86,10 @@
   color: $euiTextColor;
   border-top: $euiBorderThin;
   border-bottom: $euiBorderThin;
+
+  &.euiTableRowCell--isMobileHeader {
+    display: none; // Hide if not mobile breakpoint
+  }
 }
 
 .euiTableRowCellCheckbox {
