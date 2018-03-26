@@ -29,6 +29,10 @@
   @include euiTitle("xxs");
   font-weight: $euiFontWeightMedium;
 
+  &.euiTableHeaderCell--isMobileHeader {
+    display: none;
+  }
+
   .euiTableHeaderButton {
     text-align: left;
     font-weight: $euiFontWeightMedium;
@@ -84,6 +88,10 @@
   color: $euiTextColor;
   border-top: $euiBorderThin;
   border-bottom: $euiBorderThin;
+
+  &.euiTableRowCell--isMobileHeader {
+    display: none; // Hide if not mobile breakpoint
+  }
 }
 
 .euiTableRowCellCheckbox {
