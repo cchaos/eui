@@ -438,7 +438,7 @@ export class EuiBasicTable extends Component {
   }
 
   renderItemRow(item, rowIndex) {
-    const { columns, selection, itemIdToExpandedRowMap } = this.props;
+    const { columns, selection, isSelectable, itemIdToExpandedRowMap } = this.props;
 
     const cells = [];
 
@@ -480,6 +480,7 @@ export class EuiBasicTable extends Component {
       <Fragment key={`row_${itemId}`}>
         <EuiTableRow
           aria-owns={expandedRowId}
+          isSelectable={isSelectable}
           isSelected={selected}
           onMouseOver={onMouseOver}
           onMouseOut={onMouseOut}
