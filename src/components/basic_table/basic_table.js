@@ -485,7 +485,7 @@ export class EuiBasicTable extends Component {
   }
 
   renderItemRow(item, rowIndex) {
-    const { columns, selection, isSelectable, itemIdToExpandedRowMap } = this.props;
+    const { columns, selection, isSelectable, hasActions , itemIdToExpandedRowMap } = this.props;
 
     const cells = [];
 
@@ -531,6 +531,7 @@ export class EuiBasicTable extends Component {
           isSelected={selected}
           onMouseOver={onMouseOver}
           onMouseOut={onMouseOut}
+          hasActions={hasActions}
         >
           {cells}
         </EuiTableRow>
@@ -617,7 +618,7 @@ export class EuiBasicTable extends Component {
 
     const key = `record_actions_${itemId}_${columnIndex}`;
     return (
-      <EuiTableRowCell key={key} align="right" textOnly={false}>
+      <EuiTableRowCell key={key} align="right" textOnly={false} hasActions={true}>
         {tools}
       </EuiTableRowCell>
     );
