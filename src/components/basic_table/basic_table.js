@@ -170,6 +170,11 @@ export class EuiBasicTable extends Component {
     return criteria;
   }
 
+  scrollToTop = () => {
+    const topOfTable = this.tableElement.offsetTop;
+    window.scrollTo(0, topOfTable);
+  }
+
   itemId(item) {
     const { selection } = this.props;
     if (selection) {
@@ -205,6 +210,7 @@ export class EuiBasicTable extends Component {
       }
     };
     this.props.onChange(criteria);
+    this.scrollToTop();
   }
 
   onPageChange(index) {
@@ -218,6 +224,7 @@ export class EuiBasicTable extends Component {
       }
     };
     this.props.onChange(criteria);
+    this.scrollToTop();
   }
 
   onColumnSortChange(column) {
@@ -300,7 +307,9 @@ export class EuiBasicTable extends Component {
     const head = this.renderTableHead();
     const body = this.renderTableBody();
     return (
-      <div>
+      <div
+        ref={element => { this.tableElement = element; }}
+      >
         {mobileSort}
         <EuiTable>{head}{body}</EuiTable>
       </div>
