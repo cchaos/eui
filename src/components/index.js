@@ -235,6 +235,8 @@ export {
   EuiTableHeaderCell,
   EuiTableHeaderCellCheckbox,
   EuiTablePagination,
+  EuiTableSortMobile,
+  EuiTableSortMobileItem,
   EuiTableRow,
   EuiTableRowCell,
   EuiTableRowCellCheckbox,
