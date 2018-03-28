@@ -235,11 +235,12 @@ export {
   EuiTableHeaderCell,
   EuiTableHeaderCellCheckbox,
   EuiTablePagination,
-  EuiTableSortMobile,
-  EuiTableSortMobileItem,
   EuiTableRow,
   EuiTableRowCell,
   EuiTableRowCellCheckbox,
+  EuiTableHeaderMobile,
+  EuiTableSortMobile,
+  EuiTableSortMobileItem,
 } from './table';
 
 export {
