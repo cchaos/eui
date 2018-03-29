@@ -486,7 +486,7 @@ export class EuiBasicTable extends Component {
   }
 
   renderItemRow(item, rowIndex) {
-    const { columns, selection, isSelectable, hasActions , itemIdToExpandedRowMap } = this.props;
+    const { columns, selection, isSelectable, hasActions, itemIdToExpandedRowMap } = this.props;
 
     const cells = [];
 
@@ -520,6 +520,7 @@ export class EuiBasicTable extends Component {
     }, 0);
 
     expandedRowColSpan = expandedRowColSpan - mobileOnlyCols;
+
     // We'll use the ID to associate the expanded row with the original.
     const expandedRowId = `row_${itemId}_expansion`;
     const expandedRow = itemIdToExpandedRowMap[itemId] ? (
@@ -682,6 +683,7 @@ export class EuiBasicTable extends Component {
         key={key}
         align={align}
         header={column.name}
+        isExpander={column.isExpander}
         {...rest}
       >
         {content}
