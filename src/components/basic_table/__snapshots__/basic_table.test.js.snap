@@ -240,6 +240,7 @@ exports[`EuiBasicTable itemIdToExpandedRowMap renders an expanded row 1`] = `
           </EuiTableRow>
           <EuiTableRow
             id="row_1_expansion"
+            isExpandedRow={true}
             key="row_1_expansion"
           >
             <EuiTableRowCell
