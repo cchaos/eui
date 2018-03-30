@@ -489,7 +489,7 @@ export class EuiBasicTable extends Component {
   }
 
   renderItemRow(item, rowIndex) {
-    const { columns, selection, isSelectable, hasActions, itemIdToExpandedRowMap } = this.props;
+    const { columns, selection, isSelectable, hasActions, itemIdToExpandedRowMap, isExpandable } = this.props;
 
     const cells = [];
 
@@ -543,6 +543,7 @@ export class EuiBasicTable extends Component {
           onMouseOver={onMouseOver}
           onMouseOut={onMouseOut}
           hasActions={hasActions}
+          isExpandable={isExpandable}
         >
           {cells}
         </EuiTableRow>
