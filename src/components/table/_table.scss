@@ -12,23 +12,19 @@
   background-color: $euiColorEmptyShade;
 }
 
-.euiTableHeaderMobile {
-  padding: $euiSizeS;
-}
-
+// Hide mobile-only elements by default
 .euiTableHeaderMobile,
-.euiTableSortMobile {
+.euiTableHeaderCell--isMobileHeader {
   display: none;
 }
 
-.euiTable--compressed {
-  .euiTableCellContent {
-    padding: $euiSizeXS;
-    @include euiFontSizeXS;
-  }
-
-  .euiTableHeaderButton:focus {
-    outline: solid $euiSizeXS $euiFocusBackgroundColor;
+// Compressed styles not for mobile
+@include screenSmallMediumLarge {
+  .euiTable--compressed {
+    .euiTableCellContent {
+      @include euiFontSizeXS;
+      padding: $euiTableCellContentPadding--compressed;
+    }
   }
 }
 
@@ -36,6 +32,7 @@
   @include euiTableCell;
   @include euiTitle("xxs");
   font-weight: $euiFontWeightMedium;
+  border-top: none;
 
   &.euiTableHeaderCell--isMobileHeader {
     display: none;
@@ -46,7 +43,7 @@
     font-weight: $euiFontWeightMedium;
   }
 
-  .euiTableCellContent--text {
+  .euiTableCellContent__text {
     @include euiFontSizeXS;
     color: $euiTitleColor;
     font-weight: $euiFontWeightBold;
@@ -64,18 +61,16 @@
 
 .euiTableHeaderButton {
   @include euiFontSizeS;
-
   color: inherit;
   width: 100%;
 
   &:hover, &:focus {
-    .euiTableCellContent--text {
+    .euiTableCellContent__text {
       text-decoration: underline;
       color: $euiColorPrimary;
     }
 
     .euiTableSortIcon {
-      display: block;
       fill: $euiColorPrimary;
     }
   }
@@ -83,38 +78,42 @@
 
 .euiTableSortIcon {
   margin-left: $euiSizeXS;
-  flex-shrink: 0;
+  flex-shrink: 0; // makes sure the icon doesn't change size because the text is long
 
   .euiTableHeaderButton-isSorted & {
     fill: $euiTitleColor;
   }
 }
 
+.euiTableHeaderCellCheckbox {
+  @include euiTableCellCheckbox;
+}
+
 .euiTableRow {
   &:hover {
-    background-color: tintOrShade($euiColorLightestShade, 50%, 20%);
+    background-color: $euiTableHoverColor;
   }
 
   &.euiTableRow-isExpandedRow {
     .euiTableRowCell {
-      background-color: tintOrShade($euiColorLightestShade, 50%, 20%);
+      background-color: $euiTableHoverColor;
     }
 
     &.euiTableRow-isSelectable .euiTableCellContent {
-      padding-left: $euiSizeXL;
+      padding-left: $euiTableCellCheckboxWidth + $euiTableCellContentPadding;
     }
   }
 
   &.euiTableRow-isSelected {
-    background-color: tintOrShade($euiFocusBackgroundColor, 30%, 0%);
+    background-color: $euiTableSelectedColor;
 
-    + .euiTableRow.euiTableRow-isExpandedRow {
-      background-color: tintOrShade($euiFocusBackgroundColor, 30%, 0%);
+    + .euiTableRow.euiTableRow-isExpandedRow .euiTableRowCell {
+      background-color: $euiTableSelectedColor;
     }
 
     &:hover,
-    &:hover + .euiTableRow.euiTableRow-isExpandedRow  {
-      background-color: tintOrShade($euiFocusBackgroundColor, 0, 10%);
+    &:hover + .euiTableRow.euiTableRow-isExpandedRow .euiTableRowCell  {
+      background-color: $euiTableHoverSelectedColor;
     }
   }
 }
@@ -123,8 +122,6 @@
   @include euiTableCell;
 
   color: $euiTextColor;
-  border-top: $euiBorderThin;
-  border-bottom: $euiBorderThin;
 
   &.euiTableRowCell--isMobileHeader {
     display: none; // Hide if not mobile breakpoint
@@ -133,9 +130,6 @@
 
 .euiTableRowCellCheckbox {
   @include euiTableCellCheckbox;
-
-  border-top: $euiBorderThin;
-  border-bottom: $euiBorderThin;
 }
 
 /**
@@ -147,7 +141,7 @@
 .euiTableCellContent {
   display: flex;
   align-items: center; /* 1 */
-  padding: $euiSizeS; /* 2 */
+  padding: $euiTableCellContentPadding; /* 2 */
 }
 
   /**
@@ -170,6 +164,7 @@
   text-align: center;
 }
 
+.euiTableHeaderCell,
 .euiTableCellContent--truncateText {
   white-space: nowrap; /* 3 */
 
