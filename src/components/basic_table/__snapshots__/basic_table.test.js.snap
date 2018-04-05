@@ -21,6 +21,7 @@ exports[`EuiBasicTable basic - empty - custom message 1`] = `
           <EuiTableRowCell
             align="center"
             colSpan={1}
+            isMobileFullWidth={true}
             textOnly={true}
           >
             where my items at?
@@ -53,6 +54,7 @@ exports[`EuiBasicTable basic - empty - custom message as node 1`] = `
           <EuiTableRowCell
             align="center"
             colSpan={1}
+            isMobileFullWidth={true}
             textOnly={true}
           >
             <p>
@@ -93,6 +95,7 @@ exports[`EuiBasicTable basic - empty 1`] = `
           <EuiTableRowCell
             align="center"
             colSpan={1}
+            isMobileFullWidth={true}
             textOnly={true}
           >
             No items found
@@ -428,6 +431,7 @@ exports[`EuiBasicTable with pagination and error 1`] = `
           <EuiTableRowCell
             align="center"
             colSpan={1}
+            isMobileFullWidth={true}
             textOnly={true}
           >
             <EuiIcon
@@ -583,16 +587,20 @@ exports[`EuiBasicTable with pagination, selection and sorting 1`] = `
 >
   <div>
     <EuiTableHeaderMobile>
-      <EuiTableSortMobile>
-        <EuiTableSortMobileItem
-          isSortAscending={true}
-          isSorted={true}
-          key="_data_s_name_0"
-          onSort={[Function]}
-        >
-          Name
-        </EuiTableSortMobileItem>
-      </EuiTableSortMobile>
+      <EuiTableSortMobile
+        items={
+          Array [
+            Object {
+              "hideForMobile": undefined,
+              "isSortAscending": true,
+              "isSorted": true,
+              "key": "_data_s_name_0",
+              "name": "Name",
+              "onSort": [Function],
+            },
+          ]
+        }
+      />
     </EuiTableHeaderMobile>
     <EuiTable>
       <EuiTableHeader>
@@ -729,16 +737,20 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
 >
   <div>
     <EuiTableHeaderMobile>
-      <EuiTableSortMobile>
-        <EuiTableSortMobileItem
-          isSortAscending={true}
-          isSorted={true}
-          key="_data_s_name_0"
-          onSort={[Function]}
-        >
-          Name
-        </EuiTableSortMobileItem>
-      </EuiTableSortMobile>
+      <EuiTableSortMobile
+        items={
+          Array [
+            Object {
+              "hideForMobile": undefined,
+              "isSortAscending": true,
+              "isSorted": true,
+              "key": "_data_s_name_0",
+              "name": "Name",
+              "onSort": [Function],
+            },
+          ]
+        }
+      />
     </EuiTableHeaderMobile>
     <EuiTable>
       <EuiTableHeader>
@@ -966,16 +978,20 @@ exports[`EuiBasicTable with pagination, selection, sorting and column dataType 1
 >
   <div>
     <EuiTableHeaderMobile>
-      <EuiTableSortMobile>
-        <EuiTableSortMobileItem
-          isSortAscending={true}
-          isSorted={true}
-          key="_data_s_count_0"
-          onSort={[Function]}
-        >
-          Count
-        </EuiTableSortMobileItem>
-      </EuiTableSortMobile>
+      <EuiTableSortMobile
+        items={
+          Array [
+            Object {
+              "hideForMobile": undefined,
+              "isSortAscending": true,
+              "isSorted": true,
+              "key": "_data_s_count_0",
+              "name": "Count",
+              "onSort": [Function],
+            },
+          ]
+        }
+      />
     </EuiTableHeaderMobile>
     <EuiTable>
       <EuiTableHeader>
@@ -1112,16 +1128,20 @@ exports[`EuiBasicTable with pagination, selection, sorting and column renderer 1
 >
   <div>
     <EuiTableHeaderMobile>
-      <EuiTableSortMobile>
-        <EuiTableSortMobileItem
-          isSortAscending={true}
-          isSorted={true}
-          key="_data_s_name_0"
-          onSort={[Function]}
-        >
-          Name
-        </EuiTableSortMobileItem>
-      </EuiTableSortMobile>
+      <EuiTableSortMobile
+        items={
+          Array [
+            Object {
+              "hideForMobile": undefined,
+              "isSortAscending": true,
+              "isSorted": true,
+              "key": "_data_s_name_0",
+              "name": "Name",
+              "onSort": [Function],
+            },
+          ]
+        }
+      />
     </EuiTableHeaderMobile>
     <EuiTable>
       <EuiTableHeader>
@@ -1258,16 +1278,20 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
 >
   <div>
     <EuiTableHeaderMobile>
-      <EuiTableSortMobile>
-        <EuiTableSortMobileItem
-          isSortAscending={true}
-          isSorted={true}
-          key="_data_s_name_0"
-          onSort={[Function]}
-        >
-          Name
-        </EuiTableSortMobileItem>
-      </EuiTableSortMobile>
+      <EuiTableSortMobile
+        items={
+          Array [
+            Object {
+              "hideForMobile": undefined,
+              "isSortAscending": true,
+              "isSorted": true,
+              "key": "_data_s_name_0",
+              "name": "Name",
+              "onSort": [Function],
+            },
+          ]
+        }
+      />
     </EuiTableHeaderMobile>
     <EuiTable>
       <EuiTableHeader>
@@ -1489,16 +1513,20 @@ exports[`EuiBasicTable with pagination, selection, sorting, column renderer and 
 >
   <div>
     <EuiTableHeaderMobile>
-      <EuiTableSortMobile>
-        <EuiTableSortMobileItem
-          isSortAscending={true}
-          isSorted={true}
-          key="_data_s_count_0"
-          onSort={[Function]}
-        >
-          Count
-        </EuiTableSortMobileItem>
-      </EuiTableSortMobile>
+      <EuiTableSortMobile
+        items={
+          Array [
+            Object {
+              "hideForMobile": undefined,
+              "isSortAscending": true,
+              "isSorted": true,
+              "key": "_data_s_count_0",
+              "name": "Count",
+              "onSort": [Function],
+            },
+          ]
+        }
+      />
     </EuiTableHeaderMobile>
     <EuiTable>
       <EuiTableHeader>
@@ -1706,16 +1734,20 @@ exports[`EuiBasicTable with sorting 1`] = `
 >
   <div>
     <EuiTableHeaderMobile>
-      <EuiTableSortMobile>
-        <EuiTableSortMobileItem
-          isSortAscending={true}
-          isSorted={true}
-          key="_data_s_name_0"
-          onSort={[Function]}
-        >
-          Name
-        </EuiTableSortMobileItem>
-      </EuiTableSortMobile>
+      <EuiTableSortMobile
+        items={
+          Array [
+            Object {
+              "hideForMobile": undefined,
+              "isSortAscending": true,
+              "isSorted": true,
+              "key": "_data_s_name_0",
+              "name": "Name",
+              "onSort": [Function],
+            },
+          ]
+        }
+      />
     </EuiTableHeaderMobile>
     <EuiTable>
       <EuiTableHeader>
