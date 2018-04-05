@@ -28,7 +28,6 @@ import { EuiIcon } from '../icon/icon';
 import { LoadingTableBody } from './loading_table_body';
 import { EuiTableHeaderMobile } from '../table/mobile/table_header_mobile';
 import { EuiTableSortMobile } from '../table/mobile/table_sort_mobile';
-import { EuiTableSortMobileItem } from '../table/mobile/table_sort_mobile_item';
 
 const dataTypesProfiles = {
   auto: {
@@ -321,32 +320,31 @@ export class EuiBasicTable extends Component {
   }
 
   renderTableMobileSort() {
+    const { columns, sorting } = this.props;
+    const items = [];
 
-    const { columns } = this.props;
-
-    const sorts = [];
+    if (!sorting) {
+      return null;
+    }
 
     columns.forEach((column, index) => {
-      const sorting = {};
-      if (this.props.sorting && column.sortable) {
-        const sortDirection = this.resolveColumnSortDirection(column);
-        sorting.isSorted = !!sortDirection;
-        sorting.isSortAscending = sortDirection ? SortDirection.isAsc(sortDirection) : undefined;
-        sorting.onSort = this.resolveColumnOnSort(column);
-
-        sorts.push(
-          <EuiTableSortMobileItem
-            key={`_data_s_${column.field}_${index}`}
-            {...sorting}
-            hideForMobile={column.hideForMobile}
-          >
-            {column.name}
-          </EuiTableSortMobileItem>
-        );
+      if(!column.sortable) {
+        return;
       }
+
+      const sortDirection = this.resolveColumnSortDirection(column);
+
+      items.push({
+        name: column.name,
+        key: `_data_s_${column.field}_${index}`,
+        onSort: this.resolveColumnOnSort(column),
+        isSorted: !!sortDirection,
+        isSortAscending: sortDirection ? SortDirection.isAsc(sortDirection) : undefined,
+        hideForMobile: column.hideForMobile,
+      });
     });
 
-    return sorts.length ? <EuiTableSortMobile>{sorts}</EuiTableSortMobile> : null;
+    return items.length ? <EuiTableSortMobile items={items} /> : null;
   }
 
   renderTableHead() {
@@ -466,7 +464,7 @@ export class EuiBasicTable extends Component {
     return (
       <EuiTableBody>
         <EuiTableRow>
-          <EuiTableRowCell align="center" colSpan={colSpan}>
+          <EuiTableRowCell align="center" colSpan={colSpan} isMobileFullWidth={true}>
             <EuiIcon type="minusInCircle" color="danger"/> {error}
           </EuiTableRowCell>
         </EuiTableRow>
@@ -480,7 +478,7 @@ export class EuiBasicTable extends Component {
     return (
       <EuiTableBody>
         <EuiTableRow>
-          <EuiTableRowCell align="center" colSpan={colSpan}>
+          <EuiTableRowCell align="center" colSpan={colSpan} isMobileFullWidth={true}>
             {noItemsMessage}
           </EuiTableRowCell>
         </EuiTableRow>
@@ -533,8 +531,6 @@ export class EuiBasicTable extends Component {
         </EuiTableRowCell>
       </EuiTableRow>
     ) : undefined;
-
-    console.log(itemIdToExpandedRowMap);
 
     return (
       <Fragment key={`row_${itemId}`}>
@@ -709,7 +705,7 @@ export class EuiBasicTable extends Component {
     return profile.align;
   }
 
-  resolveColumnSortDirection(column) {
+  resolveColumnSortDirection = (column) => {
     const { sorting } = this.props;
     if (!sorting || !sorting.sort || !column.sortable) {
       return;
@@ -719,7 +715,7 @@ export class EuiBasicTable extends Component {
     }
   }
 
-  resolveColumnOnSort(column) {
+  resolveColumnOnSort = (column) => {
     const { sorting } = this.props;
     if (!sorting || !column.sortable) {
       return;
