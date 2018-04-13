@@ -48,10 +48,18 @@ export {
 } from './color_picker';
 
 export {
+  EuiComboBox,
+} from './combo_box';
+
+export {
   EuiContextMenu,
   EuiContextMenuPanel,
   EuiContextMenuItem,
 } from './context_menu';
+
+export {
+  EuiDatePicker,
+} from './date_picker';
 
 export {
   EuiDelayHide
@@ -130,6 +138,10 @@ export {
 export {
   EuiHealth,
 } from './health';
+
+export {
+  EuiHighlight,
+} from './highlight';
 
 export {
   EuiHorizontalRule,

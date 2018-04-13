@@ -14,7 +14,7 @@ exports[`EuiCallOut is rendered 1`] = `
     />
   </div>
   <div
-    class="euiText euiText--small"
+    class="euiText euiText--small euiText--constrainedWidth"
   >
     Content
   </div>
@@ -86,7 +86,7 @@ exports[`EuiCallOut props iconType is rendered 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="euiIcon euiCallOutHeader__icon euiIcon--medium"
+      class="euiIcon euiIcon--medium euiCallOutHeader__icon"
       height="18"
       viewBox="0 0 18 18"
       width="18"
@@ -124,7 +124,7 @@ exports[`EuiCallOut props title is rendered 1`] = `
     </span>
   </div>
   <div
-    class="euiText euiText--small"
+    class="euiText euiText--small euiText--constrainedWidth"
   >
     Content
   </div>

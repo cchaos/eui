@@ -30,29 +30,36 @@
 
 .euiTableHeaderCell {
   @include euiTableCell;
+  @include euiTitle("xxs");
+  font-weight: $euiFontWeightMedium;
   border-top: none;
 
   .euiTableHeaderButton {
     text-align: left;
-    color: inherit;
-    width: 100%;
-
-    &:hover, &:focus {
-      .euiTableCellContent__text {
-        text-decoration: underline;
-        color: $euiColorPrimary;
-      }
-
-      .euiTableSortIcon {
-        fill: $euiColorPrimary;
-      }
-    }
+    font-weight: $euiFontWeightMedium;
   }
 
   .euiTableCellContent__text {
     @include euiFontSizeXS;
     color: $euiTitleColor;
     font-weight: $euiFontWeightBold;
+  }
+}
+
+.euiTableHeaderButton {
+  @include euiFontSizeS;
+  color: inherit;
+  width: 100%;
+
+  &:hover, &:focus {
+    .euiTableCellContent__text {
+      text-decoration: underline;
+      color: $euiColorPrimary;
+    }
+
+    .euiTableSortIcon {
+      fill: $euiColorPrimary;
+    }
   }
 }
 
@@ -164,6 +171,17 @@
    */
   .euiTableCellContent__text {
     overflow: visible; /* 1 */
+  }
+}
+
+.euiTableCellContent--showOnHover {
+  .euiTableCellContent__hoverItem {
+    opacity: 0;
+
+    .euiTableRow:hover &,
+    &:hover, &:focus {
+      opacity: 1;
+    }
   }
 }
 

@@ -74,8 +74,14 @@ import { CodeExample }
 import { ColorPickerExample }
   from './views/color_picker/color_picker_example';
 
+import { ComboBoxExample }
+  from './views/combo_box/combo_box_example';
+
 import { ContextMenuExample }
   from './views/context_menu/context_menu_example';
+
+import { DatePickerExample }
+  from './views/date_picker/date_picker_example';
 
 import { DelayHideExample }
   from './views/delay_hide/delay_hide_example';
@@ -112,6 +118,9 @@ import { HeaderExample }
 
 import { HealthExample }
   from './views/health/health_example';
+
+import { HighlightExample }
+  from './views/highlight/highlight_example';
 
 import { HorizontalRuleExample }
   from './views/horizontal_rule/horizontal_rule_example';
@@ -184,6 +193,9 @@ import { ToastExample }
 
 import { ToolTipExample }
   from './views/tool_tip/tool_tip_example';
+
+import { Changelog }
+  from './views/package/changelog';
 
 /**
  * Lowercases input and replaces spaces with hyphens:
@@ -302,8 +314,10 @@ const navigation = [{
     FormLayoutsExample,
     FormControlsExample,
     FormValidationExample,
+    ComboBoxExample,
     ColorPickerExample,
     CodeEditorExample,
+    DatePickerExample,
     ExpressionExample,
     FilterGroupExample,
     SearchBarExample,
@@ -314,10 +328,16 @@ const navigation = [{
     AccessibilityExample,
     DelayHideExample,
     ErrorBoundaryExample,
+    HighlightExample,
     IsColorDarkExample,
     OutsideClickDetectorExample,
     PortalExample,
   ].map(example => createExample(example)),
+}, {
+  name: 'Package',
+  items: [
+    Changelog
+  ]
 }].map(({ name, items, ...rest }) => ({
   name,
   type: slugify(name),

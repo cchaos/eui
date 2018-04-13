@@ -126,8 +126,6 @@ exports[`EuiBasicTable basic - with items 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -144,8 +142,6 @@ exports[`EuiBasicTable basic - with items 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -162,8 +158,6 @@ exports[`EuiBasicTable basic - with items 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -203,8 +197,6 @@ exports[`EuiBasicTable itemIdToExpandedRowMap renders an expanded row 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -221,8 +213,6 @@ exports[`EuiBasicTable itemIdToExpandedRowMap renders an expanded row 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -252,8 +242,6 @@ exports[`EuiBasicTable itemIdToExpandedRowMap renders an expanded row 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -293,8 +281,6 @@ exports[`EuiBasicTable with pagination - 2nd page 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -311,8 +297,6 @@ exports[`EuiBasicTable with pagination - 2nd page 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -363,8 +347,6 @@ exports[`EuiBasicTable with pagination 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -381,8 +363,6 @@ exports[`EuiBasicTable with pagination 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -399,8 +379,6 @@ exports[`EuiBasicTable with pagination 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -503,8 +481,6 @@ exports[`EuiBasicTable with pagination and selection 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_1"
@@ -533,8 +509,6 @@ exports[`EuiBasicTable with pagination and selection 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_2"
@@ -563,8 +537,6 @@ exports[`EuiBasicTable with pagination and selection 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_3"
@@ -655,8 +627,6 @@ exports[`EuiBasicTable with pagination, selection and sorting 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_1"
@@ -685,8 +655,6 @@ exports[`EuiBasicTable with pagination, selection and sorting 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_2"
@@ -715,8 +683,6 @@ exports[`EuiBasicTable with pagination, selection and sorting 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_3"
@@ -814,8 +780,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_1"
@@ -841,6 +805,7 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
               align="right"
               hasActions={true}
               key="record_actions_1_1"
+              showOnHover={true}
               textOnly={false}
             >
               <ExpandedItemActions
@@ -862,7 +827,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
                   }
                 }
                 itemId="1"
-                visible={false}
               />
             </EuiTableRowCell>
           </EuiTableRow>
@@ -872,8 +836,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_2"
@@ -899,6 +861,7 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
               align="right"
               hasActions={true}
               key="record_actions_2_1"
+              showOnHover={true}
               textOnly={false}
             >
               <ExpandedItemActions
@@ -920,7 +883,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
                   }
                 }
                 itemId="2"
-                visible={false}
               />
             </EuiTableRowCell>
           </EuiTableRow>
@@ -930,8 +892,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_3"
@@ -957,6 +917,7 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
               align="right"
               hasActions={true}
               key="record_actions_3_1"
+              showOnHover={true}
               textOnly={false}
             >
               <ExpandedItemActions
@@ -978,7 +939,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
                   }
                 }
                 itemId="3"
-                visible={false}
               />
             </EuiTableRowCell>
           </EuiTableRow>
@@ -1050,8 +1010,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and column dataType 1
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_1"
@@ -1080,8 +1038,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and column dataType 1
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_2"
@@ -1110,8 +1066,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and column dataType 1
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_3"
@@ -1202,8 +1156,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and column renderer 1
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_1"
@@ -1232,8 +1184,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and column renderer 1
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_2"
@@ -1262,8 +1212,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and column renderer 1
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_3"
@@ -1361,8 +1309,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_1"
@@ -1388,6 +1334,7 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
               align="right"
               hasActions={true}
               key="record_actions_1_1"
+              showOnHover={true}
               textOnly={false}
             >
               <ExpandedItemActions
@@ -1407,7 +1354,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
                   }
                 }
                 itemId="1"
-                visible={false}
               />
             </EuiTableRowCell>
           </EuiTableRow>
@@ -1417,8 +1363,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_2"
@@ -1444,6 +1388,7 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
               align="right"
               hasActions={true}
               key="record_actions_2_1"
+              showOnHover={true}
               textOnly={false}
             >
               <ExpandedItemActions
@@ -1463,7 +1408,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
                   }
                 }
                 itemId="2"
-                visible={false}
               />
             </EuiTableRowCell>
           </EuiTableRow>
@@ -1473,8 +1417,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_3"
@@ -1500,6 +1442,7 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
               align="right"
               hasActions={true}
               key="record_actions_3_1"
+              showOnHover={true}
               textOnly={false}
             >
               <ExpandedItemActions
@@ -1519,7 +1462,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
                   }
                 }
                 itemId="3"
-                visible={false}
               />
             </EuiTableRowCell>
           </EuiTableRow>
@@ -1591,8 +1533,6 @@ exports[`EuiBasicTable with pagination, selection, sorting, column renderer and 
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_1"
@@ -1621,8 +1561,6 @@ exports[`EuiBasicTable with pagination, selection, sorting, column renderer and 
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_2"
@@ -1651,8 +1589,6 @@ exports[`EuiBasicTable with pagination, selection, sorting, column renderer and 
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCellCheckbox
               key="_selection_column_3"
@@ -1715,8 +1651,6 @@ exports[`EuiBasicTable with sortable columns and sorting disabled 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -1733,8 +1667,6 @@ exports[`EuiBasicTable with sortable columns and sorting disabled 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -1751,8 +1683,6 @@ exports[`EuiBasicTable with sortable columns and sorting disabled 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -1806,8 +1736,6 @@ exports[`EuiBasicTable with sorting 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -1824,8 +1752,6 @@ exports[`EuiBasicTable with sorting 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
@@ -1842,8 +1768,6 @@ exports[`EuiBasicTable with sorting 1`] = `
         >
           <EuiTableRow
             isSelected={false}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
           >
             <EuiTableRowCell
               align="left"
