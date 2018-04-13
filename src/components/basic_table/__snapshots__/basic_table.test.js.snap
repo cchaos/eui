@@ -591,7 +591,6 @@ exports[`EuiBasicTable with pagination, selection and sorting 1`] = `
         items={
           Array [
             Object {
-              "hideForMobile": undefined,
               "isSortAscending": true,
               "isSorted": true,
               "key": "_data_s_name_0",
@@ -741,7 +740,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and a single record a
         items={
           Array [
             Object {
-              "hideForMobile": undefined,
               "isSortAscending": true,
               "isSorted": true,
               "key": "_data_s_name_0",
@@ -982,7 +980,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and column dataType 1
         items={
           Array [
             Object {
-              "hideForMobile": undefined,
               "isSortAscending": true,
               "isSorted": true,
               "key": "_data_s_count_0",
@@ -1132,7 +1129,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and column renderer 1
         items={
           Array [
             Object {
-              "hideForMobile": undefined,
               "isSortAscending": true,
               "isSorted": true,
               "key": "_data_s_name_0",
@@ -1282,7 +1278,6 @@ exports[`EuiBasicTable with pagination, selection, sorting and multiple record a
         items={
           Array [
             Object {
-              "hideForMobile": undefined,
               "isSortAscending": true,
               "isSorted": true,
               "key": "_data_s_name_0",
@@ -1517,7 +1512,6 @@ exports[`EuiBasicTable with pagination, selection, sorting, column renderer and 
         items={
           Array [
             Object {
-              "hideForMobile": undefined,
               "isSortAscending": true,
               "isSorted": true,
               "key": "_data_s_count_0",
@@ -1738,7 +1732,6 @@ exports[`EuiBasicTable with sorting 1`] = `
         items={
           Array [
             Object {
-              "hideForMobile": undefined,
               "isSortAscending": true,
               "isSorted": true,
               "key": "_data_s_name_0",
