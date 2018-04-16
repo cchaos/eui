@@ -489,7 +489,7 @@ export default() => (
 
       <EuiTableBody>
         <EuiTableRow>
-          <EuiTableRowCell>
+          <EuiTableRowCell isMobileHeader>
             <EuiButton>
               Add thing
             </EuiButton>
@@ -503,7 +503,7 @@ export default() => (
         </EuiTableRow>
 
         <EuiTableRow>
-          <EuiTableRowCell>
+          <EuiTableRowCell isMobileHeader>
             <EuiButtonEmpty size="s">
               Cancel
             </EuiButtonEmpty>
@@ -515,7 +515,7 @@ export default() => (
         </EuiTableRow>
 
         <EuiTableRow>
-          <EuiTableRowCell>
+          <EuiTableRowCell isMobileHeader>
             <EuiButton fill>
               Create thing
             </EuiButton>
@@ -529,7 +529,7 @@ export default() => (
         </EuiTableRow>
 
         <EuiTableRow>
-          <EuiTableRowCell>
+          <EuiTableRowCell isMobileHeader>
             <EuiButton color="danger" fill>
               Delete
             </EuiButton>&nbsp;&nbsp;
@@ -546,7 +546,7 @@ export default() => (
         </EuiTableRow>
 
         <EuiTableRow>
-          <EuiTableRowCell>
+          <EuiTableRowCell isMobileHeader>
             <EuiButton color="danger">
               Remove
             </EuiButton>&nbsp;&nbsp;
@@ -559,7 +559,7 @@ export default() => (
         </EuiTableRow>
 
         <EuiTableRow>
-          <EuiTableRowCell>
+          <EuiTableRowCell isMobileHeader>
             <EuiButton fill>
               Save
             </EuiButton>&nbsp;&nbsp;
@@ -584,7 +584,7 @@ export default() => (
 
     <EuiSpacer/>
 
-    <EuiTable>
+    <EuiTable responsive={false}>
       <EuiTableHeader>
         <EuiTableHeaderCell>
           Text
