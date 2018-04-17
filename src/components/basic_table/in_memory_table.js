@@ -116,7 +116,8 @@ export class EuiInMemoryTable extends Component {
   static defaultProps = {
     items: [],
     pagination: false,
-    sorting: false
+    sorting: false,
+    responsive: true,
   };
 
   constructor(props) {
@@ -240,6 +241,8 @@ export class EuiInMemoryTable extends Component {
       message,
       error,
       selection,
+      isSelectable,
+      hasActions,
       pagination: hasPagination,
       sorting: hasSorting,
     } = this.props;
@@ -281,6 +284,8 @@ export class EuiInMemoryTable extends Component {
         pagination={pagination}
         sorting={sorting}
         selection={selection}
+        isSelectable={isSelectable}
+        hasActions={hasActions}
         onChange={this.onTableChange}
         error={error}
         loading={loading}
