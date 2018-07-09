@@ -1,6 +1,10 @@
 export {
+  RESPONSIVE_SIZES,
+} from './sizes';
+
+export {
   EuiHideFor,
-} from './hide_from';
+} from './hide_for';
 
 export {
   EuiShowFor,

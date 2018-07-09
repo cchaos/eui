@@ -1,6 +1,6 @@
 @import '../variables/responsive';
 
-// A sem-complicated mixin for breakpoints, that takes any number of
+// A semi-complicated mixin for breakpoints, that takes any number of
 // named breakpoints that exists in $euiBreakpoints.
 
 @mixin euiBreakpoint($sizes...) {

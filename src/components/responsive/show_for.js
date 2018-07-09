@@ -2,15 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const responsiveSizesToClassNameMap = {
-  xs: 'eui-showFor--xs',
-  s: 'eui-showFor--s',
-  m: 'eui-showFor--m',
-  l: 'eui-showFor--l',
-  xl: 'eui-showFor--xl',
-};
-
-export const RESPONSIVE_SIZES = Object.keys(responsiveSizesToClassNameMap);
+import { RESPONSIVE_SIZES } from './sizes';
 
 export const EuiShowFor = ({
   children,
@@ -19,8 +11,8 @@ export const EuiShowFor = ({
   ...rest,
 }) => {
 
-  const sizingClasses = sizes.map(function (item) {
-    return responsiveSizesToClassNameMap[item];
+  const sizingClasses = sizes.map((size) => {
+    return `eui-showFor--${size}`;
   });
 
   const classes = classNames(

@@ -330,6 +330,7 @@ export {
 } from './xy_chart';
 
 export {
+  RESPONSIVE_SIZES,
   EuiHideFor,
   EuiShowFor,
 } from './responsive';

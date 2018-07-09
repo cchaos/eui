@@ -2,7 +2,8 @@ import React from 'react';
 import { render } from 'enzyme';
 import { requiredProps } from '../../test';
 
-import { RESPONSIVE_SIZES, EuiShowFor } from './show_for';
+import { RESPONSIVE_SIZES } from './sizes';
+import { EuiShowFor } from './show_for';
 
 describe('EuiShowFor', () => {
   RESPONSIVE_SIZES.forEach(size => {
