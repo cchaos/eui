@@ -11,11 +11,3 @@
     flex-grow: 0; // Offsets the properties of .euiPanel within flexboxes
   }
 }
-
-
-@include euiBreakpoint('xs','s') {
-  .euiPageContent {
-    border-radius: 0;
-    border: none;
-  }
-}

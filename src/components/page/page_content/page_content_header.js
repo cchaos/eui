@@ -2,8 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-export const EuiPageContentHeader = ({ children, className, ...rest }) => {
-  const classes = classNames('euiPageContentHeader', className);
+export const EuiPageContentHeader = ({ children, className, responsive, ...rest }) => {
+  const classes = classNames(
+    'euiPageContentHeader',
+    {
+      'euiPageContentHeader--responsive': responsive,
+    },
+    className,
+  );
 
   return (
     <div
@@ -18,4 +24,9 @@ export const EuiPageContentHeader = ({ children, className, ...rest }) => {
 EuiPageContentHeader.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  responsive: PropTypes.bool,
+};
+
+EuiPageContentHeader.defaultProps = {
+  responsive: true,
 };

@@ -7,9 +7,7 @@
 }
 
 @include euiBreakpoint('xs','s') {
-  .euiPageHeader {
+  .euiPageHeader--responsive {
     flex-direction: column;
-    padding: 0 $euiSize;
-    margin-bottom: 0;
   }
 }
