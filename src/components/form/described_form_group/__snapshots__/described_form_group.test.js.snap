@@ -266,7 +266,7 @@ exports[`EuiDescribedFormGroup ties together parts for accessibility 1`] = `
       wrap={false}
     >
       <div
-        className="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--directionRow euiFlexGroup--responsive"
+        className="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
       >
         <EuiFlexItem
           component="div"

@@ -341,12 +341,18 @@ export const FlexExample = {
       code: flexGroupResonsiveHtml,
     }],
     text: (
-      <p>
-        By default <EuiCode>EuiFlexGroup</EuiCode> is responsive. However, often
-        you only want to use groups for alignment and margins, rather than layouts.
-        Simply apply the <EuiCode>responsive={`{false}`}</EuiCode> prop
-        to retain a single row layout for the group.
-      </p>
+      <Fragment>
+        <p>
+          By default <EuiCode>EuiFlexGroup</EuiCode> is responsive. However, often
+          you only want to use groups for alignment and margins, rather than layouts.
+          Simply apply the <EuiCode>responsive={`{false}`}</EuiCode> prop
+          to retain a single row layout for the group.
+        </p>
+        <p>
+          You can optionally pass in an array of named breakpoints to show the responsive
+          (column) layout at.
+        </p>
+      </Fragment>
     ),
     demo: <div className="guideDemo__highlightGrid"><FlexGroupResponsive /></div>,
   }],

@@ -42,7 +42,7 @@ exports[`EuiHeaderAlert is rendered 1`] = `
     class="euiHeaderAlert__text"
   />
   <div
-    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow euiFlexGroup--responsive"
+    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
   >
     <div
       class="euiFlexItem euiFlexItem--flexGrowZero"
@@ -106,7 +106,7 @@ exports[`EuiHeaderAlert renders action 1`] = `
     class="euiHeaderAlert__text"
   />
   <div
-    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow euiFlexGroup--responsive"
+    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
   >
     <div
       class="euiFlexItem euiFlexItem--flexGrowZero"
@@ -174,7 +174,7 @@ exports[`EuiHeaderAlert renders date as an element 1`] = `
     class="euiHeaderAlert__text"
   />
   <div
-    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow euiFlexGroup--responsive"
+    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
   >
     <div
       class="euiFlexItem euiFlexItem--flexGrowZero"
@@ -242,7 +242,7 @@ exports[`EuiHeaderAlert renders title as an element 1`] = `
     class="euiHeaderAlert__text"
   />
   <div
-    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow euiFlexGroup--responsive"
+    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
   >
     <div
       class="euiFlexItem euiFlexItem--flexGrowZero"

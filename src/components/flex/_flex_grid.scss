@@ -13,20 +13,20 @@
   }
 }
 
-$gutterTypes: (
+$euiFlexGridGutters: (
   gutterSmall: $euiSizeS,
   gutterMedium: $euiSize,
   gutterLarge: $euiSizeL,
   gutterXLarge: $euiSizeXL,
 );
 
-$fractions: (
+$euiFlexGridFractions: (
   fourths: 25%,
   thirds: 33.3%,
   halves: 50%,
 );
 
-@each $gutterName, $gutterSize in $gutterTypes {
+@each $gutterName, $gutterSize in $euiFlexGridGutters {
   $halfGutterSize: $gutterSize * 0.5;
 
   /**
@@ -42,7 +42,7 @@ $fractions: (
     }
   }
 
-  @each $fraction, $percentage in $fractions {
+  @each $fraction, $percentage in $euiFlexGridFractions {
     .euiFlexGrid--#{$gutterName}.euiFlexGrid--#{$fraction} {
       > .euiFlexItem {
         flex-basis: calc(#{$percentage} - #{$gutterSize});

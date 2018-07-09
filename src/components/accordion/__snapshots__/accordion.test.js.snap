@@ -19,7 +19,7 @@ exports[`EuiAccordion behavior closes when clicked twice 1`] = `
       wrap={false}
     >
       <div
-        className="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+        className="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
       >
         <EuiFlexItem
           component="div"
@@ -151,7 +151,7 @@ exports[`EuiAccordion behavior opens when clicked once 1`] = `
       wrap={false}
     >
       <div
-        className="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+        className="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
       >
         <EuiFlexItem
           component="div"
@@ -270,7 +270,7 @@ exports[`EuiAccordion is rendered 1`] = `
   data-test-subj="test subject string"
 >
   <div
-    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
   >
     <div
       class="euiFlexItem"
@@ -333,7 +333,7 @@ exports[`EuiAccordion props buttonContent is rendered 1`] = `
   class="euiAccordion"
 >
   <div
-    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
   >
     <div
       class="euiFlexItem"
@@ -400,7 +400,7 @@ exports[`EuiAccordion props buttonContentClassName is rendered 1`] = `
   class="euiAccordion"
 >
   <div
-    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
   >
     <div
       class="euiFlexItem"
@@ -463,7 +463,7 @@ exports[`EuiAccordion props extraAction is rendered 1`] = `
   class="euiAccordion"
 >
   <div
-    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
   >
     <div
       class="euiFlexItem"
@@ -533,7 +533,7 @@ exports[`EuiAccordion props initialIsOpen is rendered 1`] = `
   class="euiAccordion euiAccordion-isOpen"
 >
   <div
-    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+    class="euiFlexGroup euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive--xs euiFlexGroup--responsive--s"
   >
     <div
       class="euiFlexItem"

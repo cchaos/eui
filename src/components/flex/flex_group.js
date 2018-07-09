@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { RESPONSIVE_SIZES } from '../responsive/sizes';
+
 const gutterSizeToClassNameMap = {
   none: null,
   xs: 'euiFlexGroup--gutterExtraSmall',
@@ -55,6 +57,17 @@ export const EuiFlexGroup = ({
   component: Component,
   ...rest,
 }) => {
+
+  let responsiveClasses;
+  if (responsive) {
+    // If responsive it a truthy value, set it to a default breakpoints array
+    responsive = responsive === true ? ['xs', 's'] : responsive;
+
+    responsiveClasses = responsive.map((size) => {
+      return `euiFlexGroup--responsive--${size}`;
+    });
+  }
+
   const classes = classNames(
     'euiFlexGroup',
     gutterSizeToClassNameMap[gutterSize],
@@ -62,9 +75,9 @@ export const EuiFlexGroup = ({
     justifyContentToClassNameMap[justifyContent],
     directionToClassNameMap[direction],
     {
-      'euiFlexGroup--responsive': responsive,
       'euiFlexGroup--wrap': wrap,
     },
+    responsiveClasses,
     className
   );
 
@@ -81,7 +94,16 @@ export const EuiFlexGroup = ({
 EuiFlexGroup.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  responsive: PropTypes.bool,
+  /**
+   * Determines when the group should switch to column (block level),
+   * set to `true` to use the default breakpoint,
+   * set to `false` to not switch to column ever,
+   * or set to an array of named breakpoints.
+   */
+  responsive: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.arrayOf(PropTypes.oneOf(RESPONSIVE_SIZES)),
+  ]),
   gutterSize: PropTypes.oneOf(GUTTER_SIZES),
   alignItems: PropTypes.oneOf(ALIGN_ITEMS),
   justifyContent: PropTypes.oneOf(JUSTIFY_CONTENTS),
