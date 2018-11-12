@@ -4,7 +4,7 @@
   fill: currentColor;
 
   svg {
-    transform: translate(0,0); // Hack to fix Firefox "softness"
+    transform: translate(0, 0); // Hack to fix Firefox "softness"
   }
 
   &:focus {

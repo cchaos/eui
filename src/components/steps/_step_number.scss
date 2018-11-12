@@ -1,5 +1,5 @@
 .euiStepNumber {
-  @include createStepsNumber();
+  @include createStepsNumber;
 
   &--complete {
     // Thicken the checkmark but adding a slight stroke.
