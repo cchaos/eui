@@ -2,6 +2,7 @@
   display: inline-block;
   vertical-align: middle;
   fill: currentColor;
+  flex: 0 0 auto; // If an icon is a flex item, make sure it never shrinks or grows
 
   svg {
     transform: translate(0, 0); // Hack to fix Firefox "softness"

@@ -37,6 +37,7 @@ export const EuiToast = ({ title, color, iconType, onClose, children, className,
         type={iconType}
         size="m"
         aria-hidden="true"
+        verticalAlign={2}
       />
     );
   }

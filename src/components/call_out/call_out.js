@@ -53,6 +53,7 @@ export const EuiCallOut = ({
         type={iconType}
         size="m"
         aria-hidden="true"
+        verticalAlign={2}
       />
     );
   }

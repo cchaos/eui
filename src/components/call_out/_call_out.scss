@@ -59,11 +59,3 @@ $callOutTypes: (
     font-weight: $euiFontWeightRegular;
   }
 }
-
-/**
-  * 1. Vertically center icon with first line of title.
-  */
-.euiCallOutHeader__icon {
-  flex: 0 0 auto;
-  transform: translateY(2px); /* 1 */
-}
