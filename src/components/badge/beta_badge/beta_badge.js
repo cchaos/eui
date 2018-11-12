@@ -35,6 +35,7 @@ export const EuiBetaBadge = ({
         type={iconType}
         size="m"
         aria-hidden="true"
+        verticalAlign={-1}
       />
     );
   }

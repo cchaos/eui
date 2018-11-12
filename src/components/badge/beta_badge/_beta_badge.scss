@@ -19,10 +19,5 @@
   &.euiBetaBadge--iconOnly {
     padding: 0;
     width: $euiSizeL;
-
-    .euiBetaBadge__icon {
-      position: relative;
-      margin-top: -1px;
-    }
   }
 }
