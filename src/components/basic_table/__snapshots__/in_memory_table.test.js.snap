@@ -325,6 +325,7 @@ exports[`EuiInMemoryTable behavior pagination 1`] = `
                                     className="euiButtonEmpty__icon"
                                     size="m"
                                     type="arrowDown"
+                                    verticalAlign="middle"
                                   >
                                     <arrowDown
                                       aria-hidden="true"
@@ -422,6 +423,7 @@ exports[`EuiInMemoryTable behavior pagination 1`] = `
                               className="euiButtonIcon__icon"
                               size="m"
                               type="arrowLeft"
+                              verticalAlign="middle"
                             >
                               <arrowLeft
                                 aria-hidden="true"
@@ -566,6 +568,7 @@ exports[`EuiInMemoryTable behavior pagination 1`] = `
                               className="euiButtonIcon__icon"
                               size="m"
                               type="arrowRight"
+                              verticalAlign="middle"
                             >
                               <arrowRight
                                 aria-hidden="true"

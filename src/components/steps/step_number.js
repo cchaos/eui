@@ -34,11 +34,11 @@ export const EuiStepNumber = ({
 
   let numberOrIcon;
   if (status === 'complete') {
-    numberOrIcon = <EuiIcon type="check" className="euiStepNumber__icon" title="complete" />;
+    numberOrIcon = <EuiIcon type="check" className="euiStepNumber__icon" verticalAlign={-2} title="complete" />;
   } else if (status === 'warning') {
-    numberOrIcon = <EuiIcon type="alert" className="euiStepNumber__icon" title="has warnings" />;
+    numberOrIcon = <EuiIcon type="alert" className="euiStepNumber__icon" verticalAlign={-2} title="has warnings" />;
   } else if (status === 'danger') {
-    numberOrIcon = <EuiIcon type="cross" className="euiStepNumber__icon" title="has errors" />;
+    numberOrIcon = <EuiIcon type="cross" className="euiStepNumber__icon" verticalAlign={-2} title="has errors" />;
   } else if (!isHollow) {
     numberOrIcon = number;
   }

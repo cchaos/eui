@@ -57,6 +57,7 @@ exports[`EuiAccordion behavior closes when clicked twice 1`] = `
                       <EuiIcon
                         size="m"
                         type="arrowRight"
+                        verticalAlign="middle"
                       >
                         <arrowRight
                           className="euiIcon euiIcon--medium"
@@ -199,6 +200,7 @@ exports[`EuiAccordion behavior opens when clicked once 1`] = `
                       <EuiIcon
                         size="m"
                         type="arrowDown"
+                        verticalAlign="middle"
                       >
                         <arrowDown
                           className="euiIcon euiIcon--medium"

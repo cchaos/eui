@@ -511,6 +511,7 @@ exports[`EuiSuperSelect props more props are propogated to each option 2`] = `
                             className="euiFormControlLayoutCustomIcon__icon"
                             size="m"
                             type="arrowDown"
+                            verticalAlign="middle"
                           >
                             <arrowDown
                               aria-hidden="true"
@@ -673,6 +674,7 @@ exports[`EuiSuperSelect props more props are propogated to each option 2`] = `
                                 className="euiContextMenu__icon"
                                 size="m"
                                 type="check"
+                                verticalAlign="middle"
                               >
                                 <check
                                   className="euiIcon euiIcon--medium euiContextMenu__icon"
@@ -753,6 +755,7 @@ exports[`EuiSuperSelect props more props are propogated to each option 2`] = `
                                 className="euiContextMenu__icon"
                                 size="m"
                                 type="empty"
+                                verticalAlign="middle"
                               >
                                 <empty
                                   className="euiIcon euiIcon--medium euiContextMenu__icon"

@@ -11,6 +11,14 @@
     opacity: 1; // We often hide icons on hover. Make sure they appear on focus.
     background: $euiFocusBackgroundColor;
   }
+
+  &.euiIcon--alignBaseline { vertical-align: baseline; }
+  &.euiIcon--alignBottom { vertical-align: bottom; }
+  &.euiIcon--alignTop { vertical-align: top; }
+
+  &.euiIcon--customAlign {
+    position: relative;
+  }
 }
 
 // App icons are two-toned so get an extra class. This provides the base color.
@@ -25,7 +33,7 @@
   // Primary icons are mono of that color
   &.euiIcon--primary {
     fill: $euiColorPrimary;
-  
+
     // Provides a way to make app icons close to our primary
     .euiIcon__fillSecondary {
       fill: $euiColorPrimary;

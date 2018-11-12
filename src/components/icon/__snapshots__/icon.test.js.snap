@@ -24,6 +24,62 @@ exports[`EuiIcon is rendered 1`] = `
 </svg>
 `;
 
+exports[`EuiIcon props named vertical alignment 'baseline' is rendered 1`] = `
+<svg
+  class="euiIcon euiIcon--medium euiIcon--alignBaseline"
+  focusable="false"
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`EuiIcon props named vertical alignment 'bottom' is rendered 1`] = `
+<svg
+  class="euiIcon euiIcon--medium euiIcon--alignBottom"
+  focusable="false"
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`EuiIcon props named vertical alignment 'middle' is rendered 1`] = `
+<svg
+  class="euiIcon euiIcon--medium"
+  focusable="false"
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`EuiIcon props named vertical alignment 'top' is rendered 1`] = `
+<svg
+  class="euiIcon euiIcon--medium euiIcon--alignTop"
+  focusable="false"
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`EuiIcon props number vertical alignment is rendered 1`] = `
+<svg
+  class="euiIcon euiIcon--medium euiIcon--customAlign"
+  focusable="false"
+  height="16"
+  style="top:-2px"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
 exports[`EuiIcon props size l is rendered 1`] = `
 <svg
   class="euiIcon euiIcon--large"
@@ -543,6 +599,17 @@ exports[`EuiIcon props type auditbeatApp is rendered 1`] = `
 </svg>
 `;
 
+exports[`EuiIcon props type baseline is rendered 1`] = `
+<svg
+  class="euiIcon euiIcon--medium euiIcon--alignBaseline"
+  focusable="false"
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
 exports[`EuiIcon props type beaker is rendered 1`] = `
 <svg
   class="euiIcon euiIcon--medium"
@@ -578,6 +645,17 @@ exports[`EuiIcon props type bolt is rendered 1`] = `
     href="#bolt-a"
   />
 </svg>
+`;
+
+exports[`EuiIcon props type bottom is rendered 1`] = `
+<svg
+  class="euiIcon euiIcon--medium euiIcon--alignBottom"
+  focusable="false"
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+/>
 `;
 
 exports[`EuiIcon props type boxesHorizontal is rendered 1`] = `
@@ -4247,6 +4325,17 @@ exports[`EuiIcon props type metricbeatApp is rendered 1`] = `
 </svg>
 `;
 
+exports[`EuiIcon props type middle is rendered 1`] = `
+<svg
+  class="euiIcon euiIcon--medium"
+  focusable="false"
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
 exports[`EuiIcon props type minusInCircle is rendered 1`] = `
 <svg
   class="euiIcon euiIcon--medium"
@@ -5521,6 +5610,17 @@ exports[`EuiIcon props type tokenVariable is rendered 1`] = `
     fill-rule="evenodd"
   />
 </svg>
+`;
+
+exports[`EuiIcon props type top is rendered 1`] = `
+<svg
+  class="euiIcon euiIcon--medium euiIcon--alignTop"
+  focusable="false"
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+/>
 `;
 
 exports[`EuiIcon props type trash is rendered 1`] = `

@@ -3,18 +3,17 @@
  */
 
 .euiStep {
+  // Absolutely position step circle so that long titles don't shift below circle
+  position: relative;
+
   // Do not show the content border if it is the last step
   &:last-of-type .euiStep__content {
     border-left-color: transparent;
   }
 
-  .euiTitle {
-    line-height: $euiStepNumberSize; /* 1 */
-  }
-
   .euiStep__circle {
+    position: absolute;
     margin-right: $euiStepNumberMargin;
-    vertical-align: top; /* 1 */
 
     &[class*="complete"],
     &[class*="warning"],
@@ -29,6 +28,8 @@
   }
 
   .euiStep__title {
+    padding-left: $euiStepNumberSize + $euiStepNumberMargin;
+    line-height: $euiStepNumberSize; /* 1 */
     font-weight: $euiFontWeightMedium;
     display: inline-block;
   }

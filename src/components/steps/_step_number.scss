@@ -1,11 +1,6 @@
 .euiStepNumber {
   @include createStepsNumber();
 
-  .euiStepNumber__icon {
-    position: relative;
-    top: -2px;
-  }
-
   &--complete {
     // Thicken the checkmark but adding a slight stroke.
     .euiStepNumber__icon {

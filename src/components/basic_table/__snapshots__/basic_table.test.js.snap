@@ -1280,6 +1280,7 @@ exports[`EuiBasicTable with pagination and error 1`] = `
               color="danger"
               size="m"
               type="minusInCircle"
+              verticalAlign="middle"
             />
              
             no can do

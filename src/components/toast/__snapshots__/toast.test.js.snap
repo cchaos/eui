@@ -103,6 +103,7 @@ exports[`EuiToast Props iconType is rendered 1`] = `
       className="euiToastHeader__icon"
       size="m"
       type="user"
+      verticalAlign="middle"
     />
     <span
       className="euiToastHeader__title"

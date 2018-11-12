@@ -6,6 +6,7 @@ import {
   EuiIcon,
   SIZES,
   TYPES,
+  ALIGNMENTS,
 } from './icon';
 
 describe('EuiIcon', () => {
@@ -53,6 +54,40 @@ describe('EuiIcon', () => {
         test(`${type} is rendered`, () => {
           const component = render(
             <EuiIcon type={type} />
+          );
+
+          expect(component).toMatchSnapshot();
+        });
+      });
+    });
+
+    describe('named vertical alignment', () => {
+      ALIGNMENTS.forEach(alignment => {
+        test(`'${alignment}' is rendered`, () => {
+          const component = render(
+            <EuiIcon verticalAlign={alignment} />
+          );
+
+          expect(component).toMatchSnapshot();
+        });
+      });
+    });
+
+    describe('number vertical alignment', () => {
+      test('is rendered', () => {
+        const component = render(
+          <EuiIcon verticalAlign={-2} />
+        );
+
+        expect(component).toMatchSnapshot();
+      });
+    });
+
+    describe('type', () => {
+      ALIGNMENTS.forEach(alignment => {
+        test(`${alignment} is rendered`, () => {
+          const component = render(
+            <EuiIcon verticalAlign={alignment} />
           );
 
           expect(component).toMatchSnapshot();
