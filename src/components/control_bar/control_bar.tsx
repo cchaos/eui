@@ -417,14 +417,16 @@ export class EuiControlBar extends Component<
             <EuiScreenReaderOnly>
               <h2>{landmarkHeading ? landmarkHeading : screenReaderHeading}</h2>
             </EuiScreenReaderOnly>
-            <div
-              className="euiControlBar__controls"
-              ref={node => {
-                this.bar = node;
-              }}>
-              {controls.map((control, index) => {
-                return controlItem(control, index);
-              })}
+            <div className="euiDarkModeComponent">
+              <div
+                className="euiControlBar__controls"
+                ref={node => {
+                  this.bar = node;
+                }}>
+                {controls.map((control, index) => {
+                  return controlItem(control, index);
+                })}
+              </div>
             </div>
             {this.props.showContent ? (
               <div className="euiControlBar__content">{children}</div>

@@ -1,13 +1,13 @@
 // Animations
 
-$euiAnimSlightBounce: cubic-bezier(.34, 1.61, .7, 1) !default;
-$euiAnimSlightResistance: cubic-bezier(.694, .0482, .335, 1) !default;
+$euiAnimSlightBounce: cubic-bezier(.34, 1.61, .7, 1);
+$euiAnimSlightResistance: cubic-bezier(.694, .0482, .335, 1);
 
-$euiAnimSpeedExtraFast: 90ms !default;
-$euiAnimSpeedFast: 150ms !default;
-$euiAnimSpeedNormal: 250ms !default;
-$euiAnimSpeedSlow: 350ms !default;
-$euiAnimSpeedExtraSlow: 500ms !default;
+$euiAnimSpeedExtraFast: 90ms;
+$euiAnimSpeedFast: 150ms;
+$euiAnimSpeedNormal: 250ms;
+$euiAnimSpeedSlow: 350ms;
+$euiAnimSpeedExtraSlow: 500ms;
 
 // Keyframe animation declarations can be found in
 // utility/animations.scss

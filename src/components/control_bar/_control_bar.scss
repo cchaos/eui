@@ -1,6 +1,6 @@
 .euiControlBar {
   background: $euiControlBarBackground;
-  color: $euiControlBarText;
+  // color: $euiControlBarText;
   display: flex;
   flex-direction: column;
   // This large box shadow helps prevent a flicker of dark
@@ -156,30 +156,30 @@
   }
 }
 
-@each $colorName, $colorValue in $euiButtonTypes {
-  .euiControlBar__controls {
-    .euiLink.euiLink--#{$colorName} {
-      color: makeHighContrastColor($colorValue, $euiControlBarBackground);
+// @each $colorName, $colorValue in $euiButtonTypes {
+//   .euiControlBar__controls {
+//     .euiLink.euiLink--#{$colorName} {
+//       color: makeHighContrastColor($colorValue, $euiControlBarBackground);
 
-      &:hover {
-        color: tintOrShade($colorValue, 30%, 30%);
-      }
-    }
+//       &:hover {
+//         color: tintOrShade($colorValue, 30%, 30%);
+//       }
+//     }
 
-    .euiControlBar__button.euiButton--#{$colorName}:enabled {
-      box-shadow: none;
-    }
+//     .euiControlBar__button.euiButton--#{$colorName}:enabled {
+//       box-shadow: none;
+//     }
 
-    .euiControlBar__button.euiButton--#{$colorName}:enabled:not(.euiButton--fill) {
-      color: makeHighContrastColor($colorValue, $euiControlBarBackground);
-      border-color: makeHighContrastColor($colorValue, $euiControlBarBackground);
-    }
+//     .euiControlBar__button.euiButton--#{$colorName}:enabled:not(.euiButton--fill) {
+//       color: makeHighContrastColor($colorValue, $euiControlBarBackground);
+//       border-color: makeHighContrastColor($colorValue, $euiControlBarBackground);
+//     }
 
-    .euiButtonIcon--#{$colorName} {
-      color: makeHighContrastColor($colorValue, $euiControlBarBackground);
-    }
-  }
-}
+//     .euiButtonIcon--#{$colorName} {
+//       color: makeHighContrastColor($colorValue, $euiControlBarBackground);
+//     }
+//   }
+// }
 
 @include euiBreakpoint('xs', 's') {
   .euiControlBar:not(.euiControlBar--showOnMobile) {

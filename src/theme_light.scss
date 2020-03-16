@@ -9,3 +9,13 @@
 
 // Packages
 @import '../packages/index';
+
+
+// Dark mode in Light mode components
+.euiDarkModeComponent {
+  @import 'themes/eui/eui_colors_dark';
+  @import 'global_styling/variables/index';
+  @import 'global_styling/mixins/index';
+
+  @import 'components/index';
+}
