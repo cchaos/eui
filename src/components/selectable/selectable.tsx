@@ -120,7 +120,10 @@ export type EuiSelectableProps = Omit<
      * Custom render function for each option.
      * Returns `(option, searchValue)`
      */
-    renderOption?: (option: EuiSelectableOption, searchValue: string) => {};
+    renderOption?: (
+      option: EuiSelectableOption,
+      searchValue: string
+    ) => ReactNode;
   };
 
 export interface EuiSelectableState {
