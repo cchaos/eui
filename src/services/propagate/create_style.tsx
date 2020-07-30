@@ -80,6 +80,7 @@ export const createStyle = (
   // Create a consistent class naming structure for easy debugging
   // The `autoLabel` option in babel has been set to `false`
   let computedLabel = `label:-${label}`;
+  console.log(computedStyle);
 
   // Loop through the passed props object and apply the correct styles
   // Depending on the state of the props

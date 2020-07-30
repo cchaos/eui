@@ -18,9 +18,11 @@
  */
 
 import React, { HTMLAttributes, FunctionComponent } from 'react';
-import styled from '@emotion/styled';
 import { CommonProps } from '../common';
 import classNames from 'classnames';
+import { createStyle } from '../../services/propagate/create_style';
+
+import { EuiMarkStyle, EuiMarkAmsterdamStyle } from './mark_style';
 
 export type EuiMarkProps = HTMLAttributes<HTMLElement> &
   CommonProps & {
@@ -28,7 +30,7 @@ export type EuiMarkProps = HTMLAttributes<HTMLElement> &
     size?: 's' | 'm';
   };
 
-const Mark: FunctionComponent<EuiMarkProps> = ({
+export const EuiMark: FunctionComponent<EuiMarkProps> = ({
   children,
   className,
   size = 's',
@@ -37,12 +39,15 @@ const Mark: FunctionComponent<EuiMarkProps> = ({
   const classes = classNames('euiMark', className);
 
   return (
-    <mark className={classes} {...rest}>
+    <mark
+      css={[
+        createStyle('euiMark', EuiMarkStyle, { size }), // Ex. of composed class is `css-hash--euiMark-s`
+        // Each style appends it's custom label to the previous style
+        createStyle('amsterdam', EuiMarkAmsterdamStyle), // Ex. of composed class is `css-hash--euiMark-s--amsterdam`
+      ]}
+      className={classes}
+      {...rest}>
       {children}
     </mark>
   );
 };
-
-export const EuiMark = styled(Mark)`
-  color: red;
-`;
