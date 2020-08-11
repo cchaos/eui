@@ -284,7 +284,7 @@ export {
   EuiSelectableSearch,
   EuiSelectableTemplateSitewide,
   EuiSelectableTemplateSitewideProps,
-  EuiSelectableTemplateSitewideSchema,
+  EuiSelectableTemplateSitewideOptionProps,
   EuiSelectableTemplateSitewideMetaData,
 } from './selectable';
 
